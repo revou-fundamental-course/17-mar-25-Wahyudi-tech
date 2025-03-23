@@ -181,6 +181,25 @@ button {
     display: none;
 }
 
+.hasilakhir{
+    font-size: 20px;
+    font-weight: 600;
+}
+.keterangan {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Tetap berada di tengah */
+    text-align: left; /* Teks sejajar kiri */
+}
+
+
+.keterangan p {
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
 /* 🔹 Footer */
 footer {
     background: #2C3E50;
