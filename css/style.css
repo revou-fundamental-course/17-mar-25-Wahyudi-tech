@@ -216,27 +216,40 @@ footer a:hover {
         margin: 10px 0;
     }
 
-
+    /* Tetap sejajar & lebih kecil */
     .input-group {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5px; /* Kurangi jarak antar elemen */
         width: 100%;
     }
 
-    .input-group input,
+    .input-group input {
+        flex: 2;
+        min-width: 10px; /* Diperkecil */
+        padding: 10px;
+        font-size: 14px;
+    }
+
     .input-group select {
-        width: 100%;
-        
+        flex: 1;
+        min-width: 10px; /* Diperkecil lebih lagi */
+        padding: 10px;
+        font-size: 14px;
     }
 
     .btn-group {
-        flex-direction: column;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 5px;
         width: 100%;
     }
 
     button {
-        width: 100%;
+        min-width: 100px;
+        flex-grow: 1;
     }
 }
-
-
-
