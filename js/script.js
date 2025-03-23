@@ -60,7 +60,7 @@ function hitungPersegi() {
 function resetPersegi() {
     document.getElementById("sisi").value = "";
     document.getElementById("satuan").value = "cm"; // Reset ke satuan cm secara default
-    document.getElementById("hasilPersegi").classList.add("hidden"); // Sembunyikan hasil
+    document.getElementById("hasilPersegi").classList.add("hidden"); 
 
     // Reset teks hasil agar tidak tersisa dari perhitungan sebelumnya
     document.getElementById("rumus_luas").innerText = "";
@@ -120,7 +120,7 @@ function resetPersegiPanjang() {
     document.getElementById("panjang").value = "";
     document.getElementById("lebar").value = "";
     document.getElementById("satuanPP").value = "cm"; // Reset ke satuan cm secara default
-    document.getElementById("hasilPersegiPanjang").classList.add("hidden"); // Sembunyikan hasil
+    document.getElementById("hasilPersegiPanjang").classList.add("hidden"); 
 
     // Reset teks hasil agar tidak tersisa dari perhitungan sebelumnya
     document.getElementById("rumus_luasPP").innerText = "";

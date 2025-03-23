@@ -216,18 +216,16 @@ footer a:hover {
         margin: 10px 0;
     }
 
-    /* Perbaiki posisi input dan select agar sejajar */
+
     .input-group {
         flex-direction: column;
-        gap: 8px; /* Tambahkan sedikit jarak */
-        align-items: center;
         width: 100%;
     }
 
     .input-group input,
     .input-group select {
         width: 100%;
-        text-align: center;
+        
     }
 
     .btn-group {
