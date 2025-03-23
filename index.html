@@ -10,28 +10,34 @@
 
 <body>
 
-    <!-- Judul -->
+    <!-- Header / Judul Aplikasi -->
     <header>
         <h1><span>Katik</span> Kalkulator Matematik</h1>
     </header>
 
     <div class="container">
 
-        <!-- Card Persegi -->
+        <!-- Kartu Perhitungan Persegi -->
         <div class="card">
             <div class="card-header">Persegi</div>
             <div class="card-body">
+
+                <!-- Gambar Ilustrasi -->
                 <img src="assets/square.jpg" alt="Gambar Persegi" class="gambar-persegi">
+
+                <!-- Rumus Luas & Keliling Persegi -->
                 <p class="rumus">Rumus Menghitung Luas Persegi:</p>
                 <p class="formula"><strong>L = s × s</strong></p>
 
                 <p class="rumus">Rumus Menghitung Keliling Persegi:</p>
                 <p class="formula"><strong>K = 4 × s</strong></p>
+
+                <!-- Keterangan Variabel -->
                 <div class="keterangan">
-                    <p>Keterangan: <br> L = Luas <br> s = Sisi <br> K = Keliling </p>
+                    <p>Keterangan: <br> L = Luas <br> K = Keliling <br> s = Sisi </p>
                 </div>
 
-
+                <!-- Input dan Tombol -->
                 <h3>Hitung Luas & Keliling Persegi</h3>
                 <div class="input-group">
                     <input type="number" id="sisi" placeholder="Masukkan Nilai Sisi (cm)">
@@ -47,7 +53,7 @@
                     <button class="btn-reset" onclick="resetPersegi()">Reset</button>
                 </div>
 
-                <!-- Hasil Persegi -->
+                <!-- Hasil Perhitungan Persegi -->
                 <div id="hasilPersegi" class="hidden">
                     <h3>Perhitungan Luas</h3>
                     <p id="rumus_luas"></p>
@@ -55,7 +61,7 @@
                     <p class="hasilakhir" id="nilai_luas"></p>
                     <p id="keterangan_luas"></p>
 
-                    <h3>Perhitungan Keliling</h3>z
+                    <h3>Perhitungan Keliling</h3>
                     <p id="rumus_keliling"></p>
                     <p id="perhitungan_keliling"></p>
                     <p class="hasilakhir" id="nilai_keliling"></p>
@@ -64,23 +70,27 @@
             </div>
         </div>
 
-        <!-- Card Persegi Panjang -->
+        <!-- Kartu Perhitungan Persegi Panjang -->
         <div class="card">
             <div class="card-header">Persegi Panjang</div>
             <div class="card-body">
+
+                <!-- Gambar Ilustrasi -->
                 <img src="assets/rectangle.jpg" alt="Gambar Persegi Panjang" class="gambar-persegi">
+
+                <!-- Rumus Luas & Keliling Persegi Panjang -->
                 <p class="rumus">Rumus Menghitung Luas Persegi Panjang:</p>
                 <p class="formula"><strong>L = p × l</strong></p>
-                <div class="keterangan">
-                    <p>Keterangan: <br> L = Luas <br> p = Panjang <br> l = Lebar </p>
-                </div>
+
                 <p class="rumus">Rumus Menghitung Keliling Persegi Panjang:</p>
                 <p class="formula"><strong>K = 2 × (p + l)</strong></p>
+
+                <!-- Keterangan Variabel -->
                 <div class="keterangan">
                     <p>Keterangan: <br> L = Luas <br> p = Panjang <br> l = Lebar </p>
                 </div>
 
-
+                <!-- Input dan Tombol -->
                 <h3>Hitung Luas & Keliling Persegi Panjang</h3>
                 <div class="input-group">
                     <input type="number" id="panjang" placeholder="Panjang (cm)">
@@ -97,7 +107,7 @@
                     <button class="btn-reset" onclick="resetPersegiPanjang()">Reset</button>
                 </div>
 
-                <!-- Hasil Persegi Panjang -->
+                <!-- Hasil Perhitungan Persegi Panjang -->
                 <div id="hasilPersegiPanjang" class="hidden">
                     <h3>Perhitungan Luas</h3>
                     <p id="rumus_luasPP"></p>
@@ -113,17 +123,18 @@
                 </div>
             </div>
         </div>
+
     </div>
 
+    <!-- Memuat File JavaScript -->
     <script src="js/script.js"></script>
+
 </body>
 
 <!-- Footer -->
-
 <footer>
     &copy; 2025 Wnine - Made with ❤️ by
     <a href="https://www.instagram.com/_y.udii" target="_blank">Wahyudi</a>
 </footer>
-
 
 </html>
