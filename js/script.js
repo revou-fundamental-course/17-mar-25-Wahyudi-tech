@@ -46,12 +46,12 @@ function hitungPersegi() {
     rumus_luas.innerText = "L = S × S";
     perhitungan_luas.innerText = `L = ${sisi} × ${sisi}`;
     nilai_luas.innerHTML = `L = ${luas} ${satuan}&sup2;`;
-    keterangan_luas.innerText = `Jadi luas persegi dengan panjang sisi ${sisi} ${satuan} adalah ${luas} ${satuan}².`;
+    keterangan_luas.innerText = `Jadi, luas persegi dengan panjang sisi ${sisi} ${satuan} adalah ${luas} ${satuan}².`;
 
     rumus_keliling.innerText = "K = 4 × S";
     perhitungan_keliling.innerText = `K = 4 × ${sisi}`;
     nilai_keliling.innerHTML = `K = ${keliling} ${satuan}`;
-    keterangan_keliling.innerText = `Jadi keliling persegi dengan panjang sisi ${sisi} ${satuan} adalah ${keliling} ${satuan}.`;
+    keterangan_keliling.innerText = `Jadi, keliling persegi dengan panjang sisi ${sisi} ${satuan} adalah ${keliling} ${satuan}.`;
 
     hasil.classList.remove("hidden"); // Tampilkan hasil
 }
@@ -105,12 +105,12 @@ function hitungPersegiPanjang() {
     rumus_luas.innerText = "L = P × L";
     perhitungan_luas.innerText = `L = ${panjang} × ${lebar}`;
     nilai_luas.innerHTML = `L = ${luas} ${satuan}&sup2;`;
-    keterangan_luas.innerText = `Jadi luas persegi panjang dengan panjang ${panjang} ${satuan} dan lebar ${lebar} ${satuan} adalah ${luas} ${satuan}².`;
+    keterangan_luas.innerText = `Jadi, luas persegi panjang dengan panjang ${panjang} ${satuan} dan lebar ${lebar} ${satuan} adalah ${luas} ${satuan}².`;
 
     rumus_keliling.innerText = "K = 2 × (P + L)";
     perhitungan_keliling.innerText = `K = 2 × (${panjang} + ${lebar})`;
     nilai_keliling.innerHTML = `K = ${keliling} ${satuan}`;
-    keterangan_keliling.innerText = `Jadi keliling persegi panjang dengan panjang ${panjang} ${satuan} dan lebar ${lebar} ${satuan} adalah ${keliling} ${satuan}.`;
+    keterangan_keliling.innerText = `Jadi, keliling persegi panjang dengan panjang ${panjang} ${satuan} dan lebar ${lebar} ${satuan} adalah ${keliling} ${satuan}.`;
 
     hasil.classList.remove("hidden"); // Tampilkan hasil
 }
