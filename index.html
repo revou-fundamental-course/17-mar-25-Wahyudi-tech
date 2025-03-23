@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik - Kalkulator Matematik</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Judul -->
+    <header>
+        <h1><span>Katik</span> Kalkulator Matematik</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Card Persegi -->
+        <div class="card">
+            <div class="card-header">Luas Persegi</div>
+            <div class="card-body">
+                <img src="assets/square.jpg" alt="Gambar Persegi" class="gambar-persegi">
+                <p class="rumus">Rumus Menghitung Luas Persegi:</p>
+                <p class="formula"><strong>L = S × S</strong></p>
+
+                <p class="rumus">Rumus Menghitung Keliling Persegi:</p>
+                <p class="formula"><strong>K = 4 × S</strong></p>
+                <p>Keterangan: <br> L = Luas <br> S = Sisi <br> K = Keliling </p>
+
+                <h3>Hitung Luas & Keliling Persegi</h3>
+                <div class="input-group">
+                    <input type="number" id="sisi" placeholder="Masukkan Nilai Sisi (cm)">
+                    <select id="satuan">
+                        <option value="mm">mm</option>
+                        <option value="cm" selected>cm</option>
+                        <option value="m">m</option>
+                    </select>
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn-primary" onclick="hitungPersegi()">Hitung</button>
+                    <button class="btn-reset" onclick="resetPersegi()">Reset</button>
+                </div>
+
+                <!-- Hasil Persegi -->
+                <div id="hasilPersegi" class="hidden">
+                    <h3>Perhitungan Luas</h3>
+                    <p id="rumus_luas"></p>
+                    <p id="perhitungan_luas"></p>
+                    <p id="nilai_luas"></p>
+                    <p id="keterangan_luas"></p>
+
+                    <h3>Perhitungan Keliling</h3>
+                    <p id="rumus_keliling"></p>
+                    <p id="perhitungan_keliling"></p>
+                    <p id="nilai_keliling"></p>
+                    <p id="keterangan_keliling"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Persegi Panjang -->
+        <div class="card">
+            <div class="card-header">Luas Persegi Panjang</div>
+            <div class="card-body">
+                <img src="assets/rectangle.jpg" alt="Gambar Persegi Panjang" class="gambar-persegi">
+                <p class="rumus">Rumus Menghitung Luas Persegi Panjang:</p>
+                <p class="formula"><strong>L = p × l</strong></p>
+
+                <p>Keterangan: <br> L = Luas <br> p = Panjang <br> l = Lebar </p>
+
+                <p class="rumus">Rumus Menghitung Keliling Persegi Panjang:</p>
+                <p class="formula"><strong>K = 2 × (p + l)</strong></p>
+
+                <p>Keterangan: <br>K = Keliling <br> p = Panjang <br> p = Panjang </p>
+
+                <h3>Hitung Luas & Keliling Persegi Panjang</h3>
+                <div class="input-group">
+                    <input type="number" id="panjang" placeholder="Panjang (cm)">
+                    <input type="number" id="lebar" placeholder="Lebar (cm)">
+                    <select id="satuanPP">
+                        <option value="mm">mm</option>
+                        <option value="cm" selected>cm</option>
+                        <option value="m">m</option>
+                    </select>
+                </div>
+
+                <div class="btn-group">
+                    <button class="btn-primary" onclick="hitungPersegiPanjang()">Hitung</button>
+                    <button class="btn-reset" onclick="resetPersegiPanjang()">Reset</button>
+                </div>
+
+                <!-- Hasil Persegi Panjang -->
+                <div id="hasilPersegiPanjang" class="hidden">
+                    <h3>Perhitungan Luas</h3>
+                    <p id="rumus_luasPP"></p>
+                    <p id="perhitungan_luasPP"></p>
+                    <p id="nilai_luasPP"></p>
+                    <p id="keterangan_luasPP"></p>
+
+                    <h3>Perhitungan Keliling</h3>
+                    <p id="rumus_kelilingPP"></p>
+                    <p id="perhitungan_kelilingPP"></p>
+                    <p id="nilai_kelilingPP"></p>
+                    <p id="keterangan_kelilingPP"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

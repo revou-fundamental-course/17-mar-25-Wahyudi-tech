@@ -1,0 +1,215 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* 🌟 Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #2C3E50, #3498DB);
+    margin: 0;
+    color: #333;
+}
+
+/* 🔹 Header */
+header {
+    background: #2C3E50;
+    color: white;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+header span {
+    font-weight: bold;
+    color: #3498DB;
+}
+
+/* 🔹 Container */
+.container {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 900px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* 🔹 Card */
+.card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    margin: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    background: #3498DB;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* 🔹 Gambar */
+.gambar-persegi {
+    width: 100px;
+    margin: 15px 0;
+}
+
+/* 🔹 Rumus & Formula */
+.rumus {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.formula {
+    font-size: 18px;
+    font-weight: bold;
+    color: #E74C3C;
+}
+
+/* 🔹 Input Group */
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #3498DB;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    transition: 0.3s;
+    width: 70%;
+}
+
+.input-group select {
+    padding: 12px;
+    border: 2px solid #3498DB;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #f8f8f8;
+    cursor: pointer;
+    width: 30%;
+}
+
+/* 🔹 Hilangkan tombol spinner pada input number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* 🔹 Tombol */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+    min-width: 120px;
+}
+
+.btn-primary {
+    background: #3498DB;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2980B9;
+}
+
+.btn-reset {
+    background: #E74C3C;
+    color: white;
+}
+
+.btn-reset:hover {
+    background: #C0392B;
+}
+
+/* 🔹 Hasil Perhitungan */
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    border-left: 5px solid #3498DB;
+    text-align: left;
+}
+
+.result-box p {
+    font-size: 16px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* Awalnya Sembunyikan Hasil */
+.hidden {
+    display: none;
+}
+
+/* 🔥 RESPONSIVE */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .input-group {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .input-group input,
+    .input-group select {
+        width: 100%;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
