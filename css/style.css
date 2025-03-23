@@ -188,8 +188,8 @@ button {
 .keterangan {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Tetap berada di tengah */
-    text-align: left; /* Teks sejajar kiri */
+    align-items: center; 
+    text-align: left;
 }
 
 
