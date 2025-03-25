@@ -1,7 +1,5 @@
-/* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* 🌟 Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -10,7 +8,6 @@ body {
     color: #333;
 }
 
-/* 🔹 Header */
 header {
     background: #2C3E50;
     color: white;
@@ -25,7 +22,6 @@ header span {
     color: #3498DB;
 }
 
-/* 🔹 Container */
 .container {
     margin: 50px auto;
     width: 90%;
@@ -41,7 +37,6 @@ header span {
     gap: 20px;
 }
 
-/* 🔹 Card */
 .card {
     flex: 1;
     min-width: 300px;
@@ -64,13 +59,13 @@ header span {
     padding: 20px;
 }
 
-/* 🔹 Gambar */
+
 .gambar-persegi {
     width: 100px;
     margin: 15px 0;
 }
 
-/* 🔹 Rumus & Formula */
+
 .rumus {
     font-size: 16px;
     font-weight: 600;
@@ -82,14 +77,14 @@ header span {
     color: #E74C3C;
 }
 
-/* 🔹 Input Group */
+
 .input-group {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 2px;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
     margin: auto;
     margin-bottom: 15px;
     flex-wrap: wrap;
@@ -104,7 +99,7 @@ header span {
     text-align: center;
     outline: none;
     transition: 0.3s;
-    width: 70%;
+    width: 80%;
 }
 
 .input-group select {
@@ -117,14 +112,14 @@ header span {
     width: 30%;
 }
 
-/* 🔹 Hilangkan tombol spinner pada input number */
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-/* 🔹 Tombol */
+
 .btn-group {
     display: flex;
     justify-content: center;
@@ -160,7 +155,7 @@ button {
     background: #C0392B;
 }
 
-/* 🔹 Hasil Perhitungan */
+
 .result-box {
     margin-top: 20px;
     padding: 15px;
@@ -176,7 +171,7 @@ button {
     font-weight: bold;
 }
 
-/* Awalnya Sembunyikan Hasil */
+
 .hidden {
     display: none;
 }
@@ -200,7 +195,7 @@ button {
 }
 
 
-/* 🔹 Footer */
+
 footer {
     background: #2C3E50;
     color: white;
@@ -223,7 +218,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* 🔥 RESPONSIVE */
+
 @media screen and (max-width: 600px) {
     .container {
         width: 90%;
@@ -235,26 +230,26 @@ footer a:hover {
         margin: 10px 0;
     }
 
-    /* Tetap sejajar & lebih kecil */
+
     .input-group {
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        gap: 5px; /* Kurangi jarak antar elemen */
+        gap: 5px;
         width: 100%;
     }
 
     .input-group input {
         flex: 2;
-        min-width: 10px; /* Diperkecil */
+        min-width: 10px;
         padding: 10px;
         font-size: 14px;
     }
 
     .input-group select {
         flex: 1;
-        min-width: 10px; /* Diperkecil lebih lagi */
+        min-width: 10px;
         padding: 10px;
         font-size: 14px;
     }
@@ -273,16 +268,35 @@ footer a:hover {
     }
 }
 
+
 .fade-in {
     opacity: 0;
-    transform: translateY(50px) scale(0.95);
-    transition: opacity 0.8s cubic-bezier(0.25, 0.1, 0.25, 1), 
-                transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
-    will-change: opacity, transform;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 
-.show {
+.show-up {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
 }
+
+
+.show-down {
+    opacity: 1;
+    transform: translateY(0);
+    animation: popDown 0.8s ease;
+}
+
+
+@keyframes popDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
